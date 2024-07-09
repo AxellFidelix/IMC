@@ -1,0 +1,47 @@
+nobru
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cauculo de IMC</title>
+</head>
+<body>
+    <script>
+       let peso = Number(prompt("Digite seu peso em (KG):")) 
+        let altura = Number(prompt("Digite sua altura (centimetros):"))
+        altura = altura/100
+        let imc = peso / (altura **2)
+        console.log(`O seu imc é igual a ${imc}`)
+        imc = imc.toFixed(2)
+
+        if (imc < 16){
+            alert(`imc:${imc} Muito abaixo do peso ! Estado grave , vai comer macarrão e pizza`)
+        }
+        else if (imc > 16 && imc < 17){
+            alert(`imc:${imc} Abaixo do peso foco no projeto DIGUINHO`)
+        }
+        else if (imc > 17 && imc < 19){
+            alert(`imc:${imc} Baixo peso tente comer PÂO,MACARRÂO,LAZANHA,PIZZA 5 DIAS NA SEMANA`)
+        }
+        else if(imc > 18 && imc < 25 ){
+            alert(`imc:${imc} Peso normal FOCO NO PROJETO BOREBILDER`)
+        }
+        else if (imc > 25 && imc < 30){
+            alert(`imc:${imc} Sobrepeso DIMINUA NO MACARRÃO NA LAZANHA E NA PIZZA E VAI CORRER`)
+        }
+        else if(imc >=30 && imc <35){
+            alert(`imc:${imc} OBESIDADE GRAU 1 FECHA A BOCA BEBA MUITO SUCO DE LIMÃO PULAR CORDA É UMA BOA OPÇÂO`)
+        }
+        else if (imc >= 35 && imc < 40){
+            alert(`imc:${imc} OBESIDADE GRAU 2 NÃO ABRA A BOCA NEM PRA FALAR PODE SE PERIGOSO ATE ENGOLIR VENTO E AUMENTA PRA NIVEL 3 KKK`)
+        }
+        else if(imc >= 40){
+            alert(`imc:${imc} OBESIDADE GRAU 3 BEBA SÓ ÁGUA DURANTE 1 MÊS E NÃO COMA NADA`)
+        }
+        else{
+            alert('Digite informações validas')
+        }
+    </script>
+</body>
+</html>
